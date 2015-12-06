@@ -20,7 +20,8 @@ namespace AwesomeWebApp
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
-
+        
+        // Touch
         protected void Application_BeginRequest()
         {
             Trace.WriteLine(string.Format("Request: {0}:{1}", Request.HttpMethod, Request.RawUrl));
